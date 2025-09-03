@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+}
+header{
+    background-color: blue;
+    
+}
+ul{
+    display: flex;
+
+}
+li{
+    border-width: 10px;
+    border-color: black;
+    background-color: red;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li:last-child {
+    margin-left: auto;
+}
