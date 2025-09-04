@@ -1,6 +1,11 @@
 body {
     background-color: #EAF4F4;
-    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 header {
@@ -9,6 +14,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 0;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
 
 }
 
@@ -30,33 +43,34 @@ header nav ul {
 
 header nav ul li {
     font-size: 1.5em;
-    border-radius: 10px;
     padding: 0.5rem;
     margin: 0.5rem;
     list-style: none;
     min-width: 1em;
     min-width: fit-content;
+    
 }
 
 header nav ul li:hover {
-    background-color: #3B6064;
-    cursor: pointer;
-    border-bottom: 5px solid #6B9080;
+    
+    border-bottom: 5px solid black;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
+    
+    
 }
 
 .active {
-    background-color: #3B6064;
-    border-bottom: 5px solid #6B9080;
+    
+    border-bottom: 5px solid black;
 }
 
 .burger-menu {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5em;
     border-radius: 10px;
     padding: 0.5rem;
@@ -70,4 +84,101 @@ header nav ul li a {
     background-color: #3B6064;
     cursor: pointer;
     border-bottom: 5px solid #6B9080;
+    color: white;
 }
+.home-content {
+    display: flex;
+    flex-direction: row;
+}
+main{
+    margin-top: 120px;
+    background-color: #EAF4F4;
+    flex-grow: 2;
+    margin-left: 5%
+}
+aside{
+    display: flex;
+    background-color: #A4C3B2;
+    flex-grow: 1;
+    max-height: fit-content;
+    z-index: 101;
+    position: fixed;
+    right: 0;
+    width: 325px;
+    height: calc(100vh - 100px);
+    border-radius: 0 0 0 50px;
+    padding-left: 15px;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 10px 10px 10px;
+    max-width: inherit;
+}
+aside ul li:first-child{
+    border-bottom:none;
+}
+aside ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+aside ul li{
+    border-bottom: 5px solid black;
+    padding-top: 20px;
+}
+aside ul li:hover{
+    background-color: #EAF4F4;
+    cursor: pointer;
+}
+aside ul li:first-child:hover {
+    background-color: inherit;
+    cursor: default;
+}
+footer {
+    background-color: #A4C3B2;
+    height: 100px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    opacity: 0.4;
+    flex: 0;
+    margin:0;
+    padding:0;
+}
+.footer-content {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0;
+}
+footer a {
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    
+    min-height: 64px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+footer img {
+    position: relative;
+    vertical-align: middle;
+    height: 80px;
+    margin-left: 0;      
+    margin-right: 0; 
+    mix-blend-mode: multiply;
+}
+aside h2 {
+    cursor: pointer;
+}
+
