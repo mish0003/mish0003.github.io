@@ -7,10 +7,10 @@ const closeBtn = document.getElementById("closeBtn");
 const isAsideVisible = aside.style.display !== "none";
 
 closeBtn.addEventListener("click", () => {
-        aside.style.display = "none";  
+        aside.classList.remove("visible");  
 });
 burgerMenuBtn.addEventListener("click", () => {
-    aside.style.display = "flex";
+    aside.classList.add("visible");
 });
 
 

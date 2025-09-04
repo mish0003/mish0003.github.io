@@ -1,12 +1,26 @@
+
 body {
     background-color: #EAF4F4;
     height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    margin-top: 120px;
+    background-color: #EAF4F4;
+    flex-grow: 2;
+    margin-left: 5%;
+}
+
 
 header {
     background-color: #A4C3B2;
@@ -21,8 +35,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
-    
-
 }
 
 header nav {
@@ -48,23 +60,18 @@ header nav ul li {
     list-style: none;
     min-width: 1em;
     min-width: fit-content;
-    
 }
 
 header nav ul li:hover {
-    
     border-bottom: 5px solid black;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: black;
-    
-    
 }
 
 .active {
-    
     border-bottom: 5px solid black;
 }
 
@@ -86,17 +93,13 @@ header nav ul li a {
     border-bottom: 5px solid #6B9080;
     color: white;
 }
-.home-content {
-    display: flex;
-    flex-direction: row;
-}
-main{
-    margin-top: 120px;
-    background-color: #EAF4F4;
-    flex-grow: 2;
-    margin-left: 5%
-}
-aside{
+
+
+aside {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(100px);
+    pointer-events: none;
     display: flex;
     background-color: #A4C3B2;
     flex-grow: 1;
@@ -108,47 +111,97 @@ aside{
     height: calc(100vh - 100px);
     border-radius: 0 0 0 50px;
     padding-left: 15px;
+    
 }
-aside ul{
+
+aside.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    display: flex;
+}
+
+aside ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0 10px 10px 10px;
     max-width: inherit;
 }
-aside ul li:first-child{
-    border-bottom:none;
-}
-aside ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-aside ul li{
-    border-bottom: 5px solid black;
+
+aside ul li {
+    position: relative;
     padding-top: 20px;
+    padding-left: 5px;
+    overflow: hidden;
+    font-size: 1.2em;
+    border:1px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 10px;
+    background-color: #A4C3B2;
+    margin-top: 10px;
 }
-aside ul li:hover{
-    background-color: #EAF4F4;
-    cursor: pointer;
+
+aside ul li:first-child {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    color:white;
 }
+
+aside ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px;
+    width: 0;
+    background: linear-gradient(#6B9080, #F6FFF8);
+    transition: width 0.3s ease;
+}
+
+aside ul li:not(:first-child):hover::after {
+    width: 100%;
+}
+
+aside ul li:first-child::after {
+    width: 0 !important;
+    background: none !important;
+}
+
 aside ul li:first-child:hover {
     background-color: inherit;
     cursor: default;
 }
+
+aside ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+aside h2 {
+    cursor: pointer;
+    color:white;
+}
+
+
 footer {
     background-color: #A4C3B2;
     height: 100px;
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: fit-content;
     opacity: 0.4;
     flex: 0;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .footer-content {
     width: 100%;
     justify-content: space-between;
@@ -156,29 +209,25 @@ footer {
     display: flex;
     padding: 0;
 }
+
 footer a {
     color: black;
     font-size: 4em;
     font-weight: bold;
     vertical-align: middle;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
     display: inline-block;
-    
     min-height: 64px;
     margin-right: 20px;
     margin-left: 20px;
 }
+
 footer img {
     position: relative;
     vertical-align: middle;
     height: 80px;
-    margin-left: 0;      
-    margin-right: 0; 
+    margin-left: 0;
+    margin-right: 0;
     mix-blend-mode: multiply;
-}
-aside h2 {
-    cursor: pointer;
 }
 
