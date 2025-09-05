@@ -4,14 +4,13 @@ const burgerMenuBtn = document.getElementsByClassName("burger-menu")[0];
 
 const closeBtn = document.getElementById("closeBtn");
 
-const isAsideVisible = aside.style.display !== "none";
-
 closeBtn.addEventListener("click", () => {
         aside.classList.remove("visible");  
 });
 burgerMenuBtn.addEventListener("click", () => {
     aside.classList.add("visible");
 });
+
 
 
 

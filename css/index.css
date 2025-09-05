@@ -1,7 +1,7 @@
 
 body {
     background-color: #EAF4F4;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -10,6 +10,7 @@ body {
 }
 
 .home-content {
+    flex: 1;
     display: flex;
     flex-direction: row;
 }
@@ -19,8 +20,9 @@ main {
     background-color: #EAF4F4;
     flex-grow: 2;
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
 }
-
 
 header {
     background-color: #A4C3B2;
@@ -94,7 +96,7 @@ header nav ul li a {
     color: white;
 }
 
-
+/*Aside styles*/
 aside {
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
@@ -188,7 +190,10 @@ aside h2 {
 }
 
 
+/* Footer styles */
+
 footer {
+    
     background-color: #A4C3B2;
     height: 100px;
     width: 100%;
@@ -200,6 +205,9 @@ footer {
     flex: 0;
     margin: 0;
     padding: 0;
+    margin-top: auto;
+    
+    
 }
 
 .footer-content {
@@ -229,5 +237,9 @@ footer img {
     margin-left: 0;
     margin-right: 0;
     mix-blend-mode: multiply;
+}
+section {
+    display: flex;
+    flex-direction: row;
 }
 
