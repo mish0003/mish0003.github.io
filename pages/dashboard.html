@@ -1,24 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Dashboard</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li ><a href="/index.html" >Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li class="active"><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-             <a class="burger-menu"><i class="fa-solid fa-bars"></i></a>
+            <a class="burger-menu"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
+    <main>
+        <table id="first-table">
+            <thead>
+                <tr>
+                    <th>Quarter</th>
+                    <th>Course</th>
+                    <th>EC</th>
+                    <th>Exam</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">First</td>
+                    <td>Program- & Career Orientation</td>               
+                    <td>2.5</td>
+                    <td>Presentation (individual)</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>Computer Science Basics</td>
+                    <td>5</td>
+                    <td>Written knowledge test</td>
+                    <td>9.5</td>
+                    
+                </tr>
+                <tr>
+                    <td>Programming Basics</td> 
+                    <td>5</td>
+                    <td>Case study exam</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Second</td>
+                    <td rowspan="2">Object-Oriented Programming</td> 
+                    <td>5</td>
+                    <td>Presentation (group)</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Written knowledge test</td>
+                    <td>9.5</td> 
+                    
+                </tr>
+                <tr>
+                    <td rowspan="3">Third</td>
+                    <td rowspan="3">Framework Project 1</td>
+                    <td>5</td>
+                    <td>On-site case study exam</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>2.5</td>
+                    <td>Group presentation on project result</td>
+                    <td>9.5</td>  
+                </tr>
+                <tr>
+                    <td>2.5</td>
+                    <td>Group porfolio with individual elements on requirements</td>
+                    <td>9.5</td>  
+                </tr>
+                <tr>
+                    <td rowspan="3">Fourth</td>
+                    <td rowspan="3">Framework Project 2</td>
+                    <td>2.5</td>
+                    <td>Final group delivery</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>2.5</td>
+                    <td>Individual project assessment</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>IT Development portfolio</td>
+                    <td>9.5</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="second-table">
+            <thead>
+                <tr>
+                    <th>Total EC</th>
+                    <th>Average Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>40</td>
+                    <td>9.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <aside>
+        <h2 id="closeBtn"><i class="fa-solid fa-x"></i></h2>
+        <ul>
+            <li>
+                <h2>Useful Links</h2>
+            </li>
+            <li><a href=""><i class="fa-solid fa-file-lines"></i> The HZ HBO-ICT Course and Examination
+                    Regulations</a></li>
+            <li><a href=""><i class="fa-solid fa-list-check"></i> The Implementation Regulations of the HBO-ICT
+                    program</a></li>
+            <li><a href=""><i class="fa-solid fa-graduation-cap"></i> Learn environment</a></li>
+            <li><a href=""><i class="fa-solid fa-user-graduate"></i> MyHZ</a></li>
+            <li><a href=""><i class="fa-brands fa-github"></i> Github</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-github"></i></a>
+            </div>
+            <img src="/images/logo.png" alt="HZ logo">
+        </div>
+    </footer>
 </body>
+<script src="/js/index.js"></script>
+
 </html>

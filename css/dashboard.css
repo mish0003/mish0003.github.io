@@ -1,0 +1,19 @@
+main {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    background: rgba(246, 255, 248, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(60, 96, 100, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.18);
+    padding: 32px 24px;
+}
+
+table {
+    border-radius: 10px;
+}
