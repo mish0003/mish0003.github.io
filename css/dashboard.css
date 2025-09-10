@@ -17,3 +17,31 @@ td {
 table {
     border-radius: 10px;
 }
+caption{
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color:white;
+}
+main p {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: white;
+}
+.progress-bar {
+    width: 100%;
+    background-color: grey;
+    border-radius: 20px;
+    margin-top: 16px;
+    display: block;
+    height: 24px;
+}
+#progress{
+    width: 0%;
+    background-color: red;
+    border-radius: 20px;
+    
+    display: block;
+    height: 24px;
+}

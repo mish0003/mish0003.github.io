@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/faq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>FAQ</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li ><a href="/index.html" >Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li class="active"><a href="faq.html">FAQ</a></li>
             </ul>
-             <a class="burger-menu"><i class="fa-solid fa-bars"></i></a>
+            <a class="burger-menu"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <ul>
+            <li>How can you print a document from your laptop at HZ? <span onclick="showOrHideInfo(event)"
+                    class="moreBtn"><i class="fa-solid fa-plus"></i></span></li>
+            <li class="info">
+                <p>1. Log in to the HZ website using your HZ username and password.</p>
+                <p>2. Click on "Choose File" and upload the document you want to print. Repeat this step if you need to
+                    add more documents.</p>
+                <p>3. After uploading all files, check the "Advanced" option to set preferences such as double-sided or
+                    black & white printing.</p>
+                <p>4. Select either "HZ printer" or "HZ plotter". Once the print is requested, go to the multifunctional
+                    printer, scan your HZ pass on the TouchID, and press "Print".</p>
+                <p>5. In the menu, choose the printer you sent your request to.</p>
+                <p>6. Printing will only start if there is enough credit on your printing account.</p>
+                <p>7. When finished, press "Stop" on the TouchID, and then select "Logout".</p>
+
+            </li>
+            <li>How can you scan a document and send it to your laptop at HZ?<span onclick="showOrHideInfo(event)"
+                    class="moreBtn"><i class="fa-solid fa-plus"></i></li>
+            <li class="info">
+                <p>Scanning is free, but you must have at least €0.07 credit on your HZ pass to proceed with the scan.
+                </p>
+                <p>1. Register at the multifunctional printer by scanning your HZ pass on the TouchID.</p>
+                <p>2. In the TouchID menu, select the option "Scanning - Scan".</p>
+                <p>3. Place your document on the feeder or the glass plate.</p>
+                <p>4. Press "Scan and Send" → "Scan to me" → "Yes" → then press the "Start" button.</p>
+                <p>5. When the scan is complete, select "Start Sending".</p>
+                <p>6. Once finished, press "Stop" on the TouchID, and then select "Logout".</p>
+            </li>
+            <li>How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?<span
+                    onclick="showOrHideInfo(event)" class="moreBtn"><i class="fa-solid fa-plus"></i></li>
+            <li class="info">
+                <p>1. Go to the HZ webshop.</p>
+                <p>2. Browse and select the item you want to purchase.</p>
+                <p>3. Add the item to your shopping cart.</p>
+                <p>4. Open your shopping cart to review your order.</p>
+                <p>5. Proceed to checkout to complete your purchase.</p>
+            </li>
+            <li>How can you book a project space?<span onclick="showOrHideInfo(event)" class="moreBtn"><i
+                        class="fa-solid fa-plus"></i></li>
+            <li class="info">
+                <p>1. Go to the Selfservice portal.</p>
+                <p>2. Click on "Make a reservation" and then select "Reserve a room".</p>
+                <p>3. Choose the room you want to book.</p>
+                <p>4. View the available timeslots and select your preferred option.</p>
+            </li>
+            <li >What are the instructions if you want to park your car at the HZ parking lot?<span
+                    onclick="showOrHideInfo(event)" class="moreBtn"><i class="fa-solid fa-plus"></i></li>
+            <li class="info">
+                <p>1. Show your HZ pass at the barriers to gain access.</p>
+                <p>2. Once the barriers open, you may park your vehicle in the university parking lot.</p>
+            </li>
+        </ul>
+    </main>
     <aside>
-            <h2 id="closeBtn"><i class="fa-solid fa-x"></i></h2>
-            <ul>
-                <li>
-                    <h2>Useful Links</h2>
-                </li>
-                <li><a href=""><i class="fa-solid fa-file-lines"></i> The HZ HBO-ICT Course and Examination
-                        Regulations</a></li>
-                <li><a href=""><i class="fa-solid fa-list-check"></i> The Implementation Regulations of the HBO-ICT
-                        program</a></li>
-                <li><a href=""><i class="fa-solid fa-graduation-cap"></i> Learn environment</a></li>
-                <li><a href=""><i class="fa-solid fa-user-graduate"></i> MyHZ</a></li>
-                <li><a href=""><i class="fa-brands fa-github"></i> Github</a></li>
-            </ul>
-        </aside>
-    <footer>
+        <h2 id="closeBtn"><i class="fa-solid fa-x"></i></h2>
+        <ul>
+            <li>
+                <h2>Useful Links</h2>
+            </li>
+            <li><a href=""><i class="fa-solid fa-file-lines"></i> The HZ HBO-ICT Course and Examination
+                    Regulations</a></li>
+            <li><a href=""><i class="fa-solid fa-list-check"></i> The Implementation Regulations of the HBO-ICT
+                    program</a></li>
+            <li><a href=""><i class="fa-solid fa-graduation-cap"></i> Learn environment</a></li>
+            <li><a href=""><i class="fa-solid fa-user-graduate"></i> MyHZ</a></li>
+            <li><a href=""><i class="fa-brands fa-github"></i> Github</a></li>
+        </ul>
+    </aside>
+    <footer style="margin-top: 16px;">
         <div class="footer-content">
             <div class="footer-icons">
                 <a><i class="fa-brands fa-facebook"></i></a>
@@ -48,4 +104,6 @@
     </footer>
 </body>
 <script src="/js/index.js"></script>
+<script src="/js/faq.js"></script>
+
 </html>
