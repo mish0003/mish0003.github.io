@@ -30,7 +30,7 @@ main {
 }
 
 header {
-    background : linear-gradient(#45F5F8, #4BC9FA);
+    background: linear-gradient(#45F5F8, #4BC9FA);
     opacity: 0.65;
     height: 100px;
     display: flex;
@@ -199,7 +199,7 @@ aside h2 {
 
 footer {
 
-    background-color: #A4C3B2;
+    background: linear-gradient(#45F5F8, #4BC9FA);
     height: 100px;
     width: 100%;
     display: flex;
@@ -300,50 +300,178 @@ section img:first-of-type {
     max-width: 400px;
 }
 
-main > div:first-child {
-    position: relative; 
+main>div:first-child {
+    position: relative;
     background: url('/images/plovdiv.jpg') no-repeat center center fixed;
     background-size: cover;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
     margin-bottom: 32px;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 48px;
     min-height: 300px;
-   
-    
-    
+
+
+
 }
+
 main div:first-child::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 10px;
     z-index: 1;
 }
 
 .intro {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     max-width: inherit;
     text-align: center;
-    background: rgba(190,220,228,0.45);
-    
+    background: rgba(190, 220, 228, 0.45);
+
 }
+
 .intro h1 {
     font-size: 4em;
     margin-bottom: 16px;
-    color:white;
+    color: white;
 }
+
 .intro p {
     font-size: 1.3em;
     line-height: 1.6;
     border-radius: 10px;
     margin-top: 16px;
-    color:white;
+    color: white;
     background: rgba(0, 0, 0, 0.65);
 }
+
+.timeline-category {
+    margin-bottom: 2.5rem;
+}
+
+.timeline-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0060CD;
+}
+
+/* Timeline list */
+.timeline {
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #0060CD;
+    border-radius: 2px;
+    height: 100%;
+}
+
+/* Timeline items */
+.timeline li {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 20px;
+    color:black;
+    font-size: 1.2em;
+}
+.timeline ul{
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+/* Timeline dot */
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px black;
+}
+
+/* Year badge */
+.timeline-year {
+    display: inline-block;
+    font-weight: bold;
+    color: #636e72;
+    margin-right: 10px;
+    min-width: 60px;
+}
+/* Project gallery - 4 images per row, 7 total (4 + 3) */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+}
+
+/* Each image takes up 1/4 of available width minus gaps */
+.project-gallery a {
+    flex: 0 0 calc(25% - 0.75rem); /* 25% width minus gap adjustment */
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Crops image to fit while maintaining aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-gallery {
+        justify-content: center;
+    }
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline::before {
+        left: 10px;
+        width: 3px;
+    }
+
+    .timeline li::before {
+        left: -4px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .timeline-year {
+        min-width: 50px;
+    }
+}
+
 /* Responsive: stack vertically on small screens */
 @media (max-width: 900px) {
     section {

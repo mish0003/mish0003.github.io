@@ -1,0 +1,60 @@
+main {
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #3B6064;
+    width: 100%;
+    gap: 5em;
+    margin-top: 5%;
+    justify-self: center;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 15%;
+}
+
+main ul li {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 24px 36px;
+    background: linear-gradient(to right, #0060CD, #44EFF7);
+    border: 3px solid #0060CD;
+    color: white;
+    border-radius: 2em;
+    text-align: center;
+    justify-content: center;
+    width: calc(50% - 5em);
+}
+
+main ul li:last-child {
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+main ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main li p {
+    font-size: 0.4em;
+    justify-self: center;
+}
+
+.read-more {
+    background-color: rgba(246, 255, 248, 0.65);
+    width: fit-content;
+    align-self: inherit;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 25%;
+    color: black;
+}
