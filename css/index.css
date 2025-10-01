@@ -87,31 +87,36 @@ header nav ul li a {
 .burger-menu {
     text-decoration: none;
     color: #015293;
-    font-size: 1.8em;      /* bigger text + icon */
+    font-size: 1.8em;
+    /* bigger text + icon */
     border-radius: 10px;
-    padding: 0.75rem 1.25rem; /* more padding for bigger click area */
+    padding: 0.75rem 1.25rem;
+    /* more padding for bigger click area */
     margin: 0.75rem;
-    display: inline-flex;  /* makes text + icon align better */
+    display: inline-flex;
+    /* makes text + icon align better */
     align-items: center;
-    gap: 0.5rem;           /* space between "Menu" and icon */
+    gap: 0.5rem;
+    /* space between "Menu" and icon */
     cursor: pointer;
 }
 
 .burger-menu:hover {
     color: #03214E;
-    transform: scale(1.05); /* small zoom-in */
+    transform: scale(1.05);
+    /* small zoom-in */
     transition: all 0.2s ease-in-out;
-    
+
 }
 
 /*Aside styles*/
 aside {
     transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
     transform: translateX(100px);
     pointer-events: none;
     display: flex;
-    background: linear-gradient(#45F5F8, #4BC9FA);
+    background: rgb(43, 187, 253);
+    opacity: 0;
     flex-grow: 1;
     max-height: fit-content;
     z-index: 101;
@@ -119,9 +124,9 @@ aside {
     right: 0;
     width: 325px;
     height: calc(100vh - 100px);
-    border-radius: 0 0 0 50px;
     padding-left: 15px;
-
+    margin-top: 100px;
+    border-bottom-left-radius: 50px;
 }
 
 aside.visible {
@@ -146,22 +151,16 @@ aside ul li {
     padding-bottom: 25px;
     overflow: hidden;
     font-size: 1.4em;
-    border: 1px solid black;
     border-bottom: none;
     border-right: none;
     border-radius: 10px;
-    background: linear-gradient(#45F5F8, #4BC9FA);
     margin-top: 10px;
 }
 
 aside ul li:first-child {
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    color: white;
+    color: #015293;
     background: none;
-    cursor: default;
+    cursor:none;
 }
 
 aside ul li::after {
@@ -171,8 +170,9 @@ aside ul li::after {
     bottom: 0;
     height: 2.5px;
     width: 0;
-    background: linear-gradient(#6B9080, #F6FFF8);
+    background-color: rgb(136, 230, 251);
     transition: width 0.3s ease;
+    
 }
 
 aside ul li:not(:first-child):hover::after {
@@ -191,13 +191,13 @@ aside ul li:first-child:hover {
 
 aside ul a {
     text-decoration: none;
-    color: white;
+    color: #015293;
     font-weight: bold;
 }
 
 aside h2 {
     cursor: pointer;
-    color: white;
+    color: #015293;
 }
 
 
@@ -212,7 +212,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: fit-content; 
+    min-height: fit-content;
     flex: 0;
     margin: 0;
     padding: 0;
@@ -247,7 +247,7 @@ footer img {
     margin-right: 1%;
     border-radius: 15px;
     border: 2px solid white;
-   
+
 }
 
 article h2 {
@@ -455,8 +455,9 @@ main div:first-child::before {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .timeline {
     justify-content: center;
     padding-top: 3%;
-    
+
 }
