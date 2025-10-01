@@ -1,0 +1,78 @@
+#experience-header {
+    text-align: center;
+    font-size: 3.2em;
+}
+
+#experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#experience-main-content {
+    border: none;
+    background: rgba(246, 255, 248, 0.5);
+    margin-top: 100px;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1%;
+    background: rgba(246, 255, 248, 0.2);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    margin-bottom: 5%;
+}
+
+.half h1 {
+    text-align: center;
+}
+
+.half ul {
+    list-style: none;
+    padding-left: none;
+}
+.half ul li {
+    max-inline-size: 65ch;
+    line-height: 1.5em;
+}
+
+section {
+    font-size: 1.2em;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+}
+.half .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+.half .project-gallery a {
+    flex: 0 0 calc(25% - 0.75rem) !important;
+    max-width: calc(25% - 0.75rem);
+    display: block;
+    margin-left: 0 !important;
+}
+.half .project-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+}
+.half .project-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
