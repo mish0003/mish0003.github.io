@@ -34,6 +34,10 @@
 .half  ul{
     list-style: none;
 }
+.half ul li {
+    line-height: 1.5em;
+    
+}
 section{
     font-size: 1.2em;
     margin-left: 1%;

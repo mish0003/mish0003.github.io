@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here is my HZ ICT study progress with course grades, EC credits, and exam results in my student dashboard.">
+    <meta name="keywords" content="HZ ICT dashboard, study progress, course grades, EC credits, exam results, student performance, course overview, learning progress">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Dashboard</title>
+    <title>HZ ICT Dashboard - Study Progress & Course Overview</title>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                     <td>Computer Science Basics</td>
                     <td class="credit">5</td>
                     <td>Written knowledge test</td>
-                    <td class="grade">0</td>
+                    <td class="grade">8</td>
 
                 </tr>
                 <tr>
@@ -78,7 +80,7 @@
                 <tr>
                     <td class="credit">2.5</td>
                     <td>Group presentation on project result</td>
-                    <td class="grade">0</td>
+                    <td class="grade">6</td>
                 </tr>
                 <tr>
                     <td class="credit">2.5</td>
@@ -139,7 +141,7 @@
                 </tr>
             </tbody>
         </table>
-        <p>Study progress</p>
+        <p id="study-progress-paragraph">Study progress</p>
         <div class="progress-bar">
             <div id="progress"></div>
         </div>
@@ -148,17 +150,22 @@
     <aside>
         <h2 id="closeBtn"><i class="fa-solid fa-x"></i></h2>
         <ul>
-                <li>
-                    <h2>Useful Links</h2>
-                </li>
-                <li><a target="_blank" href="https://oer.hz.nl/b8035ee8-758f-439b-96a9-c82f5abbf2e3"><i class="fa-solid fa-file-lines"></i> The HZ HBO-ICT Course and Examination
-                        Regulations</a></li>
-                <li><a target="_blank" href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#112-implementation-regulations"><i class="fa-solid fa-list-check"></i> The Implementation Regulations of the HBO-ICT
-                        program</a></li>
-                <li><a target="_blank" href="https://learn.hz.nl/my/"><i class="fa-solid fa-graduation-cap"></i> Learn environment</a></li>
-                <li><a href="./pages/dashboard.html"><i class="fa-solid fa-user-graduate"></i> My study progress</a></li>
-                <li><a target="_blank" href="https://github.com/HZ-HBO-ICT"><i class="fa-brands fa-github"></i> Github</a></li>
-            </ul>
+            <li>
+                <h2>Useful Links</h2>
+            </li>
+            <li><a target="_blank" href="https://oer.hz.nl/b8035ee8-758f-439b-96a9-c82f5abbf2e3"><i
+                        class="fa-solid fa-file-lines"></i> The HZ HBO-ICT Course and Examination
+                    Regulations</a></li>
+            <li><a target="_blank"
+                    href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f#112-implementation-regulations"><i
+                        class="fa-solid fa-list-check"></i> The Implementation Regulations of the HBO-ICT
+                    program</a></li>
+            <li><a target="_blank" href="https://learn.hz.nl/my/"><i class="fa-solid fa-graduation-cap"></i> Learn
+                    environment</a></li>
+            <li><a href="./pages/dashboard.html"><i class="fa-solid fa-user-graduate"></i> My study progress</a></li>
+            <li><a target="_blank" href="https://github.com/HZ-HBO-ICT"><i class="fa-brands fa-github"></i> Github</a>
+            </li>
+        </ul>
     </aside>
     <footer>
         <div class="footer-content">
@@ -170,11 +177,11 @@
                 <a target="_blank" href="https://github.com/mish0003?tab=repositories"><i
                         class="fa-brands fa-github"></i></a>
             </div>
-            <img src="/images/logo.png" alt="HZ logo">
+            <img src="/images/logo.png" alt="HZ University logo">
         </div>
     </footer>
 </body>
 <script src="/js/index.js"></script>
-<script src="/js/progressBar.js"></script>
+<script src="/js/dashboard.js"></script>
 
 </html>
