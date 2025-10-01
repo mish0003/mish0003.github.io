@@ -76,7 +76,7 @@ header nav ul li {
 
 /* Underline effect on hover */
 header nav ul li:hover {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #007bdf;
 }
 
 /* Navigation links */
@@ -88,7 +88,7 @@ header nav ul li a {
 
 /* Active page indicator */
 .active {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #005498;
 }
 
 /* Burger menu button */
