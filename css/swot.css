@@ -1,32 +1,42 @@
+/* SWOT page heading */
 #swot-header {
     text-align: center;
     font-size: 3.2em;
 }
 
+/* Main SWOT container - vertical layout */
 #swot-container {
     display: flex;
     flex-direction: column;
-    gap:2%;
+    gap: 2%;
 }
 
+/* Half-width sections for SWOT categories */
 .half {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:1%;
-    
+    gap: 1%;
 }
-.half h3{
+
+/* Headings inside half sections */
+.half h3 {
     text-align: center;
 }
-.half  ul{
+
+/* Remove bullet points from lists */
+.half ul {
     list-style: none;
 }
+
+/* List items with max width for readability */
 .half ul li {
     max-inline-size: 65ch;
     line-height: 1.5em;
 }
-section{
+
+/* General section styling */
+section {
     font-size: 1.2em;
     margin-left: 1%;
     margin-right: 1%;

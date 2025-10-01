@@ -1,3 +1,4 @@
+/* Body - full page background setup */
 body {
     background: url('/images/background2.png') no-repeat center center fixed;
     background-size: cover;
@@ -9,6 +10,7 @@ body {
     padding: 0;
 }
 
+/* Home page content wrapper */
 .home-content {
     background: url('/images/background2.png') no-repeat center center fixed;
     background-size: cover;
@@ -17,23 +19,25 @@ body {
     flex-direction: row;
 }
 
+/* Main content area with glassmorphism effect */
 main {
     background: rgba(246, 255, 248, 0.65);
-    background-size: cover;
-    margin-top: 120px;
     border-radius: 18px;
     box-shadow: 0 8px 32px 0 rgba(60, 96, 100, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.18);
-    padding: 32px 24px;
-    flex-grow: 2;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(8px) saturate(140%);
     -webkit-backdrop-filter: blur(8px) saturate(140%);
-    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    margin-top: 120px; /* space for fixed header */
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 32px;
+    padding: 32px 24px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Content sections */
 section {
     margin: 60px auto;
     max-width: 900px;
@@ -46,7 +50,7 @@ section {
     background: none;
 }
 
-/* Section titles */
+/* Section headings */
 section h2 {
     font-size: 1.6rem;
     margin-bottom: 1%;
@@ -59,22 +63,15 @@ section h2 {
 
 /* About section */
 #about {
-    padding-top: 0.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 0.5%;
+    padding: 0.5% 2%;
 }
 
 #about p {
     text-align: justify;
     font-size: 1.1rem;
     max-width: 700px;
-
 }
 
-/* Family section */
-/* Education section */
-/* Skills section */
 /* Goals section */
 #goals {
     margin-top: 0;
@@ -89,20 +86,17 @@ section h2 {
     margin: 0 auto;
 }
 
+/* Main div - splits content into two columns */
 .main-div {
     display: flex;
     justify-content: space-between;
-    /* spreads them out evenly */
     align-items: flex-start;
-    /* align at the top */
     gap: 20px;
-    /* space between the two sections */
     max-width: 1000px;
     margin: 0 auto;
 }
 
-
-/*main section*/
+/* Article cards with glassmorphism */
 article {
     display: flex;
     flex-direction: row;
@@ -116,9 +110,9 @@ article {
     backdrop-filter: blur(8px) saturate(140%);
     -webkit-backdrop-filter: blur(8px) saturate(140%);
     border: 3px solid #003E88;
-    
 }
 
+/* Images inside articles */
 article img {
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(60, 96, 100, 0.10);
@@ -128,18 +122,21 @@ article img {
     object-fit: cover;
 }
 
+/* Article headings */
 article h1,
 article h2 {
     color: #015293;
     margin-top: 0;
 }
 
+/* Article text */
 article p {
     color: #015293;
     line-height: 1.7;
     font-size: 1.08em;
 }
 
+/* First image in article can be larger */
 article img:first-of-type {
     max-width: 400px;
 }

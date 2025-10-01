@@ -1,46 +1,56 @@
+/* Feedback page heading */
 #feedback-header {
     text-align: center;
     font-size: 3.2em;
-    
 }
 
+/* Main feedback container - vertical layout */
 #feedback-container {
     display: flex;
     flex-direction: column;
-    gap:3%;    
+    gap: 3%;    
 }
-#feedback-main-content{
-    border:none;
+
+/* Main content area styling */
+#feedback-main-content {
+    border: none;
     background: rgba(246, 255, 248, 0.5);
     margin-top: 100px;
 }
+
+/* Half-width sections for splitting content */
 .half {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:1%;
+    gap: 1%;
     background: rgba(246, 255, 248, 0.2);
     border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
     padding-top: 20px;
     padding-left: 5px;
     padding-bottom: 25px;
-    border: 1.5px solid rgba(255, 255, 255, 0.35);
     margin-bottom: 5%;
-    
 }
-.half h1{
+
+/* Headings inside half sections */
+.half h1 {
     text-align: center;
 }
-.half  ul{
+
+/* Remove bullet points from lists */
+.half ul {
     list-style: none;
 }
+
+/* List item spacing */
 .half ul li {
     line-height: 1.5em;
-    
 }
-section{
+
+/* General section styling */
+section {
     font-size: 1.2em;
     margin-left: 1%;
     margin-right: 1%;
-    
 }

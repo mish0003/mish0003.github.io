@@ -1,9 +1,10 @@
+/* Main container - centers everything */
 main {
     justify-content: center;
     align-items: center;
-    align-items: center;
 }
 
+/* Card grid container */
 main ul {
     display: flex;
     flex-wrap: wrap;
@@ -14,12 +15,11 @@ main ul {
     width: 100%;
     gap: 5em;
     margin-top: 5%;
-    justify-self: center;
-    margin-right: 0;
-    padding-right: 0;
     margin-left: 15%;
+    justify-self: center;
 }
 
+/* Individual cards - 2 column layout */
 main ul li {
     font-size: 2.5em;
     font-weight: bold;
@@ -29,10 +29,10 @@ main ul li {
     color: white;
     border-radius: 2em;
     text-align: center;
-    justify-content: center;
-    width: calc(50% - 5em);
+    width: calc(50% - 5em); /* accounts for gap */
 }
 
+/* Center the last card if it's alone in the row */
 main ul li:last-child {
     margin-left: 23%;
     margin-bottom: 5%;
@@ -43,18 +43,18 @@ main ul a {
     color: inherit;
 }
 
+/* Smaller description text inside cards */
 main li p {
     font-size: 0.4em;
     justify-self: center;
 }
 
+/* Read more button styling */
 .read-more {
     background-color: rgba(246, 255, 248, 0.65);
     width: fit-content;
-    align-self: inherit;
-    justify-content: center;
-    text-align: center;
     padding: 12px 24px;
     border-radius: 25%;
     color: black;
+    text-align: center;
 }

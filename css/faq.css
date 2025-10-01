@@ -1,16 +1,26 @@
-main ul{
+/* Centers main container content */
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main list container - vertical layout */
+main ul {
     display: flex;
     flex-direction: column;
-    
+
+    /* Reset default list styles */
     padding: 0;
     margin: 0;
     list-style: none;
-    color: #3B6064;;
+
+    color: #3B6064;
     justify-content: center;
     width: 80%;
-    
 }
-main ul li{
+
+/* Individual list items */
+main ul li {
     font-size: 1.2em;
     font-weight: bold;
     padding: 24px 36px;
@@ -19,24 +29,25 @@ main ul li{
     color: #3B6064;
     border-radius: 5px;
 }
-main ul li span{
+
+/* Span element inside list items - positioned on the right */
+main ul li span {
     float: right;
     color: #3B6064;
     cursor: pointer;
+    /* shows it's clickable */
 }
-.info{
+
+/* Hidden info section that expands on click */
+.info {
     padding: 24px 36px;
-    margin:0;
+    margin: 0;
     margin-bottom: 16px;
     overflow: hidden;
     text-wrap: break-word;
     display: none;
+    /* hidden by default, shown with JS */
     background-color: rgba(81, 242, 248, 0.65);
     border: 3px solid rgba(255, 255, 255);
     color: black;
-
-}
-main{
-    justify-content: center;
-    align-items: center;
 }

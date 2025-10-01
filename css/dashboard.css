@@ -1,48 +1,57 @@
+/* Add spacing around main content */
 main {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-
+/* Table styling - applies to table, headers, and cells */
 table,
 th,
 td {
     border: 1px solid black;
     text-align: center;
-    background: rgba(246, 255, 248, 0.65);
+    background: rgba(246, 255, 248, 0.65); /* semi-transparent light background */
     box-shadow: 0 8px 32px 0 rgba(60, 96, 100, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.18);
     padding: 32px 24px;
 }
 
+/* Rounded corners for the table */
 table {
     border-radius: 10px;
 }
-caption{
+
+/* Table caption styling */
+caption {
     font-size: 2.4em;
     font-weight: bold;
     margin-bottom: 16px;
-    color:white;
+    color: white;
 }
+
+/* Main paragraph text */
 main p {
     text-align: center;
     font-size: 2.4em;
     font-weight: bold;
     color: white;
 }
+
+/* Progress bar container/background */
 .progress-bar {
     width: 100%;
+    height: 24px;
     background-color: #71E7F7;
     border-radius: 20px;
+    border: 2px solid #03214E;
     margin-top: 16px;
     display: block;
-    height: 24px;
-    border: 2px solid #03214E;
 }
-#progress{
+
+/* Progress bar fill - width controlled by JavaScript */
+#progress {
     width: 0%;
+    height: 24px;
     background-color: #03214E;
     border-radius: 20px;
-    
     display: block;
-    height: 24px;
 }
